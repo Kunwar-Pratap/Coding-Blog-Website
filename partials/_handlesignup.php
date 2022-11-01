@@ -1,6 +1,5 @@
 <?php 
     $showError = "false";
-    // $showAlert = "false";
     if($_SERVER['REQUEST_METHOD']=='POST'){
         include "_dbconnect.php";
         $user_name = $_POST["name"];
@@ -8,7 +7,6 @@
         $password = $_POST["password"];
         $cPassword = $_POST["cPassword"];
 
-        // ? check whether this email exists
         $existSql = "SELECT * FROM `users` WHERE user_email = '$user_email'";
         $result = mysqli_query($conn, $existSql);
         $numRows = mysqli_num_rows($result);
@@ -22,7 +20,7 @@
                 $result = mysqli_query($conn, $sql);
                 if ($result) {
                     $showAlert = true;
-                    header("location: /codingblogwebsite/index.php?signupsuccess=true");
+                    header('Location: /codingblogwebsite/index.php?signupsuccess=true');
                     exit();
                 }
             } 
@@ -30,5 +28,6 @@
                 $showError = "Password do not match";
             }
         }
-        header("location: /codingblogwebsite/index.php?signupsuccess=false&error=$showError");
+        header('Location: /codingblogwebsite/index.php?signupsuccess=false&error=$showError');
     }
+?>

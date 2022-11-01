@@ -4,18 +4,14 @@
 
 <head>
     <title>Coding Blog - About Us</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
 </head>
 
 <body>
     <?php
-    // include "partials/_dbconnect.php";
+    include "partials/_dbconnect.php";
     include "partials/_header.php";
     ?>
 
@@ -34,7 +30,6 @@
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/feature-1.jpg" alt="">
-
                 </div>
             </div>
             <div class="row featurette d-flex align-items-center justify-content-center my-4">
@@ -48,7 +43,6 @@
                 </div>
                 <div class="col-md-5 order-md-2">
                     <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/feature-2.jpg" alt="">
-
                 </div>
             </div>
             <div class="row featurette d-flex align-items-center justify-content-center my-4">
@@ -61,7 +55,6 @@
                 </div>
                 <div class="col-md-5 order-md-1">
                     <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/feature-3.jpg" alt="">
-
                 </div>
             </div>
             <div class="row featurette d-flex align-items-center justify-content-center my-4">
@@ -75,15 +68,12 @@
                 </div>
                 <div class="col-md-5 order-md-2">
                     <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="img/feature-4.jpg" alt="">
-
                 </div>
             </div>
         </div>
-
         <div class="container my-5">
             <h2 class="text-center mb-4">Testimonials</h2>
             <hr class="border-2 border-top border-info ">
-
             <div class="row">
                 <div class="col-lg-4">
                     <img src="img/p-1.jpg" class="rounded-circle mx-auto d-block" alt="Sample image">
@@ -110,12 +100,10 @@
         </div>
     </main>
 
-    <!-- ! place footer here -->
-
     <?php
     include "partials/_footer.php";
     ?>
-    <!-- Bootstrap JavaScript Libraries -->
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
 

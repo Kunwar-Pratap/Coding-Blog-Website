@@ -4,23 +4,19 @@
 
 <head>
     <title>Coding Blog - Home</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-
 </head>
 
 <body>
     <?php
-    // include "partials/_dbconnect.php";
+    include "partials/_dbconnect.php";
     include "partials/_header.php";
     ?>
 
     <main>
-        <!-- ! Carousel -->
+        <!-- Carousel -->
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -68,7 +64,7 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- ! Cards -->
+        <!-- Cards -->
         <div class="container my-4">
             <h2 class="text-center mb-4">Explore Now</h2>
             <hr class="border-2 border-top border-info ">
@@ -101,7 +97,6 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <img class="bd-placeholder-img" width="200" height="250" src="img/thumb-2.jpg" alt="Bootstrap-Designs">
-
                         </div>
                     </div>
                 </div>
@@ -117,7 +112,6 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <img class="bd-placeholder-img" width="200" height="250" src="img/thumb-3.jpg" alt="HTML">
-
                         </div>
                     </div>
                 </div>
@@ -133,7 +127,6 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <img class="bd-placeholder-img" width="200" height="250" src="img/thumb-4.jpg" alt="CSS">
-
                         </div>
                     </div>
                 </div>
@@ -149,7 +142,6 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <img class="bd-placeholder-img" width="200" height="250" src="img/thumb-5.jpg" alt="UX & UI">
-
                         </div>
                     </div>
                 </div>
@@ -165,7 +157,6 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             <img class="bd-placeholder-img" width="200" height="250" src="img/thumb-6.jpg" alt="PHP">
-
                         </div>
                     </div>
                 </div>
@@ -176,6 +167,7 @@
     <?php
     include "partials/_footer.php";
     ?>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>

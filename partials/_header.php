@@ -1,5 +1,7 @@
-<header>
-    <!-- ! place navbar here -->
+<?php
+    session_start();
+
+    echo '
     <nav class="navbar navbar-expand-lg  bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand pt-0" href="/codingblogwebsite">codingBlog</a>
@@ -42,8 +44,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.php">Contact Us</a>
                     </li>
-                </ul>
-                <form class="d-flex my-0" role="search">
+                </ul>';
+        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+            echo '<form class="d-flex my-0" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+                <p class="text-light my-0 mx-1">Welcome ' . $_SESSION['username'] . '</p>
+                <a href="partials/_logout.php" class="btn btn-outline-danger ml-2">Logout</a> 
+                </div>';
+        } else {
+                echo '<form class="d-flex my-0" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-info" type="submit">Search</button>
                 </form>
@@ -51,20 +62,19 @@
                     <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
                     <button class="btn btn-info mx-1" data-bs-toggle="modal"
                         data-bs-target="#signupModal">Signup</button>
+                </div>';
+            }
+
+            echo    '</div>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </nav>';
 
-</header>
-<?php
-include "partials/_loginmodal.php";
-include "partials/_signupmodal.php";
-
-if (isset($_GET['signupsuccess']) && $_GET['signupsuccess'] == "true") {
-    echo '<div class="alert alert-success alert-dismissible fade show my-0" role="alert">
+    include "partials/_loginmodal.php";
+    include "partials/_signupmodal.php";
+    if (isset($_GET['signupsuccess']) && $_GET['signupsuccess'] == "true") {
+        echo '<div class="alert alert-success alert-dismissible fade show my-0" role="alert">
                     <strong>Success!</strong> You can now login
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>';
-}
+    }
 ?>
