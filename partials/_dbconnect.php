@@ -8,3 +8,4 @@
     // if (!$conn) {
     //     die("We failed to connect to the database due to this error: " . mysqli_connect_error());
     // }
+?>
