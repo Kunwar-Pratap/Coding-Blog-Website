@@ -17,4 +17,6 @@ Coding blog website developed using BootStrap Framework. I have used PHP as a ba
 
 ![codingblog-10](https://user-images.githubusercontent.com/104005034/199279400-6651f049-41ab-4835-9c9f-b32e9d82e036.png)
 
+![codingblog-8](https://user-images.githubusercontent.com/104005034/199280398-dbf39a77-4d31-42d7-9c47-b3033fb89d27.png)
+
 ![codingblog-9](https://user-images.githubusercontent.com/104005034/199278933-a9afb256-565e-4465-9bc6-14a28c83de48.png)
